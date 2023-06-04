@@ -1,9 +1,24 @@
-# timesheet-manager-client
+# Timesheet Manager Client
 
 ## About
-This is the code to the frontend client of my timesheet manager web app. It is written in Vue and is designed as an SPA. Pinia has been used for state management.
+This repository contains the frontend client code for the timesheet manager web app. It is built using Vue.js and follows the principles of a Single Page Application (SPA). Pinia has been utilized for state management.
 
-Users arrive at a login page, on successful login the secured areas of the app load in. One version for a normal user, another for an admin user.
+## Functionality
+The frontend client provides the following functionality:
+
+* User Authentication: Users are presented with a login page where they can (securely) authenticate.
+* Role-based Access: Upon successful login, different areas of the app load based on the user's role. There are separate versions for standard users and admin users.
+* Submission of records.
+* Retreival of records in report form, with optional filter/search criteria.
+* Adding and editing users registered with the system by admin users.
+
+## TODO
+* Pagination for larger numbers of returned results (may be better handled by the REST controller).
+* Use HTTPS when implemented on REST controller.
+* Add ability to edit records (user can edit own, admin can edit all).
+* Increase time user is logged in for, until the expressly logout.
+* Incorporate a service to email users their default password, and then prompt to change it on first login.
+* Improve styling.
 
 ## Project setup
 ```
